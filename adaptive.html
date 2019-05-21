@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="adaptive.css" type="text/css">
+	<link rel="stylesheet" href="media-queries.css" type="text/css">
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="magnific-popup/jquery.magnific-popup.js"></script>	
+	<title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+	<header></header>
+    <article>
+     <div class="knopka" id="cool">
+    	<div class="lan"></div>
+    	<div class="lan"></div>
+    	<div class="lan"></div>
+     </div>
+     <div class="flex-container " id="move">
+      <p>программа развития</p>
+      <p>тренажеры</p>
+      <p>соревнования</p>
+      <p>курсы</p>
+      <p>наука</p>
+      <button>усилить премиум</button>
+     </div>
+    </article>
+    <section>
+    <a class="test-popup-link" href="path-to-image.jpg">
+     <img  src="prosesor.jpg" alt="">
+    </a>
+    <a class="test-popup-link" href="path-to-image.jpg">
+     <img src="demon.jpg" alt="">
+    </a>
+    <a class="test-popup-link" href="path-to-image.jpg">
+     <img src="phone.jpg" alt=""></section>
+    </a>
+    <aside>
+    	<div class="bar"></div>
+    	<div class="bar"></div>
+    	<div class="bar"></div>
+    </aside>
+    <div class="clear"></div>
+	<footer></footer>
+   </div>
+   <script>
+   	var dav=document.getElementById('cool');
+   	var div=document.getElementById('move');
+   
+   	dav.onclick=function(){
+   		if(div.classList.contains("mave")){
+   			div.classList.remove("mave");
+   			dav.classList.remove("up");
+   		}
+   		else{
+   			div.classList.add("mave");
+   	  dav.classList.add("up");
+   		}
+   	}
+   	$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
+   	
+   </script>
+</body>
+</html>

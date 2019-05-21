@@ -1,0 +1,27 @@
+body{
+	margin:0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+img{
+	height:300px;
+	margin:50px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px black;
+	transition: 0.3s;
+	align-self: flex-end;
+}
+img:hover{
+	transform: scale(2);
+}
