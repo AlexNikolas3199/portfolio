@@ -26,4 +26,15 @@
 	color:#29b6a6;
 	text-shadow: -2px 2px 2px black
 }
+
+/* end of 1th portfolio */
+/* start of 13th portfolio */
+
+
+.area-13 section{
+	background-position: 67% 50%;
+}
+.area-13 section p{
+	transform: translateY(-30px);
+}
 }

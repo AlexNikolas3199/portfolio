@@ -41,3 +41,54 @@ display:flex;
 
     }
 }
+
+/* end of 1th portfolio */
+/* start of 13th portfolio */
+.area-13{
+	height:100vh;
+ 	display:flex;
+ 	justify-content: center;
+ 	align-items: center;
+	width:100%;
+}
+
+.area-13 section{
+	position: relative;
+	width: 100%;
+	height:100%;
+	background: url(bg.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	animation: color-change 3s linear infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	
+}
+@keyframes color-change{
+	0%,100%{
+		filter: hue-rotate(0deg);
+	}
+	50%{
+		filter: hue-rotate(360deg);
+	}
+}
+.area-13 section:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background: url(rain.png);
+	animation: rain .2s linear infinite;
+}
+@keyframes rain {
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 20% 100%;
+	}
+}
