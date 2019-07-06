@@ -37,4 +37,13 @@
 .area-13 section p{
 	transform: translateY(-30px);
 }
+
+/* end of 13th portfolio */
+/* start of 8th portfolio */
+.area-8 div{
+	width: 95%
+}
+.area-8 div h1{
+	font-size: 3em
+}
 }
