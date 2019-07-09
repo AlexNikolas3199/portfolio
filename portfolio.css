@@ -106,6 +106,7 @@ margin-top:150px;
 	display:block;
 	width:100%;
 	height:100%;
+	background-color:red;
   background:url(phone.png) no-repeat ;
 margin-top:150px;
   transition: 0.5s;
@@ -131,6 +132,7 @@ width:100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+ flex-wrap: wrap;
 		margin:0 10%;
 }
 
@@ -243,7 +245,7 @@ background:white;
 width:100%;
 z-index: 1;
 }
-.button{
+.area-4 .button{
 	transform: translate(-50% ,-50%);
 	color:#1670f0;
 	padding:30px 60px;
@@ -255,13 +257,13 @@ z-index: 1;
 	overflow: hidden;
 	margin-left:140px;
 }
-.button .text-button{
+.area-4 .button .text-button{
 	transition: .2s;
 }
-.button:hover .text-button{
+.area-4 .button:hover .text-button{
  transform: scale(1.1)
 }
-.button:before{
+.area-4 .button:before{
 	content:'';
 	position: absolute;
 	top:2px;
@@ -302,7 +304,7 @@ z-index: 1;
 		transform:translateY(-100%);
 	}
 }
-.button span:nth-child(1){
+.area-4 .button span:nth-child(1){
 position: absolute;
 top:0;
 left:0;
@@ -311,7 +313,7 @@ height:2px;
 background:linear-gradient(to right,#0c002b,#1779ff);
 animation: animate1 2s linear infinite;
 }
-.button span:nth-child(2){
+.area-4 .button span:nth-child(2){
 position: absolute;
 top:0;
 right:0;
@@ -322,7 +324,7 @@ animation: animate2 2s linear infinite;
 animation-delay:1s;
 
 }
-.button span:nth-child(3){
+.area-4 .button span:nth-child(3){
 position: absolute;
 bottom:0;
 right:0;
@@ -331,7 +333,7 @@ height:2px;
 background:linear-gradient(to left,#0c002b,#1779ff);
 animation: animate3 2s linear infinite;
 }
-.button span:nth-child(4){
+.area-4 .button span:nth-child(4){
 position: absolute;
 bottom:0;
 left:0;
@@ -938,7 +940,7 @@ box-shadow: 20px 0 100px  rgba(0,0,0,0.2),
 	justify-content: center;
 	align-items: center;
 	font-size: 50px;
-	
+
 }
 @keyframes color-change{
 	0%,100%{

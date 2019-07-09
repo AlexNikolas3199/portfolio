@@ -1,20 +1,24 @@
 @media  screen and (max-width:1300px){
 	
 	.bereza{
-	color:#29b6a6;
+	color:#29b6f6;
 	text-shadow: -5px 5px 2px black
 }
 .area-1 h1{
 	color:black;
 }
 
-	@keyframes animate0{
-0%,100%{
-	transform:scale(1) rotate(0) skew(20deg) translateY(0);
+@keyframes animate0{
+0%{
+	transform:scale(1) rotate(-10deg) skew(20deg) translate(0,0);
+	text-shadow:0 0 0 rgba(0, 0, 0 ,0.2);
+	
+
 }
 50%{
-	transform:scale(1.17) rotate(0) skew(20deg) translateY(-20px);
-	
+	transform:scale(1.17) rotate(-10deg) skew(20deg) translate(40px ,-40px);
+	text-shadow:-50px 50px 0 rgba(0 ,0 ,0 ,0.2);
+
     }
 }
 @media  screen and (max-width:938px){
@@ -45,5 +49,71 @@
 }
 .area-8 div h1{
 	font-size: 3em
+}
+
+/* end of 8th portfolio */
+/* start of 9th portfolio */
+.area-9  section:before{
+	width: 30%;
+	 animation: anigo 3.5s ease-in-out infinite;
+}
+@keyframes anigo{
+0%,100%{
+	    left:0px;
+        }	
+50%{
+	left:calc(100% - 30%);
+   }
+}
+
+/* end of 9th portfolio */
+/* start of 11th portfolio */
+
+.area-11 label{
+ transform: scale(2);
+}
+
+.area-12 .box{
+transform: scale(0.5);
+}
+
+.area-3 .container{
+	min-width: 300px
+}
+.area-3 .container .cardbox {
+	height:200px;
+	width:130px;
+	margin: 10px  3px;
+}
+.area-3 .container .cardbox:before{
+	top:-2px;
+	left:-2px;
+	right:-2px;
+	bottom: -2px;
+}
+.cardbox .content h2{
+	top:10px;
+	right:10px;
+	font-size:5em;
+}
+.cardbox:hover .content h2{
+top:-10px;
+}
+.area-3 .cardbox .content h3{
+margin: 0 0 5px;
+padding:0;
+font-size:14px;
+}
+.area-3 .cardbox .content p{
+	font-size:10px;
+	margin-top:20px;
+}
+.area-3 .cardbox .content a{
+margin:20px 0 0;
+padding:2px;
+font-size: 15px
+}
+.area-7 h1{
+ font-size:6em;
 }
 }
