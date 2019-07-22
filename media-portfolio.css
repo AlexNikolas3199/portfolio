@@ -8,6 +8,9 @@
 	color:black;
 }
 
+.area-14 .containerform .form:hover{
+	box-shadow: none;
+}
 @keyframes animate0{
 0%{
 	transform:scale(1) rotate(-10deg) skew(20deg) translate(0,0);
@@ -20,6 +23,7 @@
 	text-shadow:-50px 50px 0 rgba(0 ,0 ,0 ,0.2);
 
     }
+}
 }
 @media  screen and (max-width:938px){
 	.area-1 h1{

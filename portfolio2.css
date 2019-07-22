@@ -908,3 +908,171 @@ width:100%;
 height:100px;
 background:linear-gradient(#060c21 ,#000);	
 }
+.area-14{
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	background: black;
+	font-family: consolas;
+}
+.area-14 .fp-tableCell{
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.area-14 .containerform{
+	position: relative;
+	width:450px;
+	min-height: 300px;
+	background:rgba(255,255,255,0.05);
+	box-shadow: 0 5px 15px rgba(0,0,0,1)
+}
+.area-14 .containerform:before{
+	content:'';
+	position: absolute;
+	top:0;
+	left: 0;
+	width:50%;
+	height:100%;
+	background: rgba(255,255,255,0.1);
+	pointer-events: none
+}
+.area-14 .containerform .form{
+	position: relative;
+	height: 100%;
+	width:100%;
+	padding: 20px 40px 40px 40px;
+	z-index: 1;
+	box-sizing: border-box;
+	transition: 0.8s
+}
+.area-14 .containerform .form:hover{
+	box-shadow: 20px -20px 4px rgba(255,255,255,0.03),
+	 40px -40px 4px rgba(255,255,255,0.03),
+	 -20px 20px 4px rgba(255,255,255,0.03),
+	 -40px 40px 4px rgba(255,255,255,0.03);
+}
+.area-14 .containerform .form h2{
+	margin: 0;
+	padding: 0;
+	color:#fff;
+	font-size: 24px;
+}
+.area-14 .containerform .form .inputBox{
+	width:100%;
+	margin-top:20px;
+}
+.area-14 .containerform .form .inputBox input{
+	position: relative;
+	width:100%;
+	background:transparent;
+	border:none;
+	border-bottom:2px solid black;
+	outline: none;
+	font-size:18px;
+	color:#fff;
+	padding: 5px;
+	font-family: consolas;
+}
+ .inputBox label{
+	position: absolute;
+	color:#eee;
+	font-size: 18px;
+	pointer-events: none;
+	transition: 0.3s
+}
+ .inputBox:nth-child(1) label{
+ 	top:75px;
+ 	left:50px;
+ }
+ .inputBox:nth-child(2) label{
+ 	top:130px;
+ 	left:50px
+ }
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label{
+	top:55px;
+	left: 40px;
+	font-size: 15px
+}
+.inputBox:nth-child(2) input:focus ~ label,
+.inputBox:nth-child(2) input:valid ~ label{
+	top:110px;
+	left: 40px;
+	font-size: 15px
+}
+
+.area-14 .containerform .form .inputBox button{
+	background: #fff;
+	position: relative;
+	color:black;
+	border:none;
+	font-weight: 900;
+	width: 100px;
+	cursor: pointer;
+	transition: 0.4s ;
+	outline: none;
+	font-size:18px;
+	padding: 5px;
+	font-family: consolas;
+	overflow: hidden;
+	transition: 0.1s
+}
+.area-14 .containerform .form .inputBox button:before{
+	position: absolute;
+	content: 'Login';
+	top:0;
+	left:0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	padding-left:0;	
+	background: red;
+	transition: 0.1s;
+	transform: translateY(-100%);
+	background: linear-gradient(225deg,#ff0047,#6eff00);
+	animation: 10s linear infinite formcolors1;
+}
+.area-14 .containerform .form .inputBox button:hover:before{
+	transform: translateY(0);
+}
+.area-14 .containerform .form .inputBox button:hover{
+	box-shadow: 0 0 0 1px black
+}
+.area-14 .containerform .form p{
+	color:#eee;
+}
+.area-14 .containerform .form p a{
+	color:#fff;
+	transition: 0.4s ;
+}
+.area-14 .containerform .form p a:hover{
+	color:black;
+}
+.area-14 .containerform:after{
+	content: '';
+	position: absolute;
+	top:-5px;
+	left:-5px;
+	right: -5px;
+	bottom: -5px;
+	background: linear-gradient(45deg,#ff0047,#6eff00);
+	animation: 10s linear infinite formcolors;
+}
+@keyframes formcolors{
+	0%{
+		filter: blur(60px) hue-rotate(0deg);
+	}
+	100%{
+		filter: blur(60px) hue-rotate(360deg);
+	}
+	}
+@keyframes formcolors1{
+	0%{
+		filter:  hue-rotate(0deg);
+	}
+	100%{
+		filter:  hue-rotate(360deg);
+	}
+	}
